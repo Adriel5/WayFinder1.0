@@ -1,0 +1,82 @@
+@media all and (orientation:portrait) {
+
+  }
+  @media all and (orientation:landscape) {
+    #scrolling{
+        height: 200vh;
+        background-color: rgba(0, 0, 0, 0.164);
+        width: 50vw;
+        margin: auto;
+    }
+  }
+
+
+
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(white, black);
+    background-attachment: fixed;
+}
+
+header.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul{
+    display: flex;
+
+}
+
+header ul li{
+    margin-left: 1em;
+    list-style: none;
+}
+
+a.menuSection{       
+font-size: 1.4em;
+transition-duration:0.5s;
+text-decoration: none;
+color: black;
+}
+
+a.menuSection:hover{    
+transition-duration:0.5s;
+text-shadow: 0px 0px 3px black;
+letter-spacing: 0.05em;
+color: white;
+}
+
+#title {
+    transition-duration:1s;
+    font-family: serif monospace;
+    font-weight: bolder;
+    font-size: 4em;
+    letter-spacing: -0.12em;
+}
+
+#title:hover {
+    transition-duration:1s;
+    letter-spacing: 0em;
+}
+
+a.activeMenuSection{
+    color: white;
+    font-size: 1.4em;
+    text-decoration: none;
+    text-shadow: 0px 0px 3px black;
+}
