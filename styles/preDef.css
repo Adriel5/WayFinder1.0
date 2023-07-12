@@ -1,16 +1,35 @@
+:root {
+    --color1: rgb(14, 0, 211);
+    --color2: rgb(0, 255, 213);
+    --color3: rgb(13, 0, 85);
+    --back1: rgb(255, 255, 255);
+    --back2: rgb(0, 0, 0);
+  }
+
 @media all and (orientation:portrait) {
 
-  }
-  @media all and (orientation:landscape) {
-    #scrolling{
-        height: 200vh;
-        background-color: rgba(0, 0, 0, 0.164);
-        width: 50vw;
-        margin: auto;
-    }
-  }
+}
+@media all and (orientation:landscape) {
 
+}
 
+body {
+   
+}
+
+html ::-webkit-scrollbar {
+    width: 15px;
+  }
+  html ::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background: var(--color1);
+  }
+  html ::-webkit-scrollbar-track {
+    background: var(--back1);
+  }
+html {
+    scroll-behavior: smooth;
+}
 
 * {
     font-family: sans-serif;
@@ -22,7 +41,7 @@
 
 body {
     min-height: 100vh;
-    background: linear-gradient(white, black);
+    background: linear-gradient(var(--color3), var(--back2));
     background-attachment: fixed;
 }
 
@@ -51,14 +70,14 @@ a.menuSection{
 font-size: 1.4em;
 transition-duration:0.5s;
 text-decoration: none;
-color: black;
+color: var(--back1);
 }
 
 a.menuSection:hover{    
 transition-duration:0.5s;
-text-shadow: 0px 0px 3px black;
+text-shadow: 0px 0px 3px var(--back2);
 letter-spacing: 0.05em;
-color: white;
+color: var(--color2);
 }
 
 #title {
@@ -66,7 +85,8 @@ color: white;
     font-family: serif monospace;
     font-weight: bolder;
     font-size: 4em;
-    letter-spacing: -0.12em;
+    letter-spacing: -0.09em;
+    color: var(--back1);
 }
 
 #title:hover {
@@ -75,8 +95,12 @@ color: white;
 }
 
 a.activeMenuSection{
-    color: white;
+    color: var(--color2);
     font-size: 1.4em;
     text-decoration: none;
-    text-shadow: 0px 0px 3px black;
+    text-shadow: 0px 0px 3px var(--back2);
+}
+
+#scrolling{
+    background: linear-gradient(var(--color1), var(--color3));
 }

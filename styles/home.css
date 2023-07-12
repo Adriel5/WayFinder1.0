@@ -1,0 +1,15 @@
+@media all and (orientation:portrait) {
+
+}
+@media all and (orientation:landscape) {
+  #scrolling{
+      height: 200vh;
+      width: 50vw;
+      margin: auto;
+  }
+}
+
+
+body {
+   
+}
