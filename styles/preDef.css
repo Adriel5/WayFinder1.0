@@ -1,32 +1,35 @@
 :root {
-    --color1: rgb(14, 0, 211);
-    --color2: rgb(0, 255, 213);
-    --color3: rgb(13, 0, 85);
+    --color1: rgb(0, 255, 213);
+    --color2: rgb(107, 255, 230);
+    --color3: rgb(167, 255, 240);
     --back1: rgb(255, 255, 255);
     --back2: rgb(0, 0, 0);
-  }
-
-@media all and (orientation:portrait) {
-
-}
-@media all and (orientation:landscape) {
-
 }
 
-body {
-   
-}
+@media all and (orientation:portrait) {}
+
+@media all and (orientation:landscape) {}
 
 html ::-webkit-scrollbar {
     width: 15px;
-  }
-  html ::-webkit-scrollbar-thumb {
+}
+
+html ::-webkit-scrollbar-thumb:hover {
+    border-radius: 50px;
+    background: var(--back2);
+    transition: 0.5s;
+}
+
+html ::-webkit-scrollbar-thumb {
     border-radius: 50px;
     background: var(--color1);
-  }
-  html ::-webkit-scrollbar-track {
+    transition: 0.5s;
+}
+
+html ::-webkit-scrollbar-track {
     background: var(--back1);
-  }
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -35,17 +38,17 @@ html {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
-    font-family:sans-serif;
+    font-family: sans-serif;
     box-sizing: border-box;
 }
 
 body {
     min-height: 100vh;
-    background: linear-gradient(var(--color3), var(--back2));
+    background: linear-gradient(var(--back2), var(--color3));
     background-attachment: fixed;
 }
 
-header.menu{
+header.menu {
     position: fixed;
     top: 0;
     left: 0;
@@ -56,51 +59,62 @@ header.menu{
     align-items: center;
 }
 
-header ul{
+header ul {
     display: flex;
 
 }
 
-header ul li{
+header ul li {
     margin-left: 1em;
     list-style: none;
 }
 
-a.menuSection{       
-font-size: 1.4em;
-transition-duration:0.5s;
-text-decoration: none;
-color: var(--back1);
+a.menuSection {
+    font-size: 1.4em;
+    transition-duration: 0.5s;
+    text-decoration: none;
+    color: var(--back1);
 }
 
-a.menuSection:hover{    
-transition-duration:0.5s;
-text-shadow: 0px 0px 3px var(--back2);
-letter-spacing: 0.05em;
-color: var(--color2);
+a.menuSection:hover {
+    transition-duration: 0.5s;
+    text-shadow: 0px 0px 3px var(--back2);
+    letter-spacing: 0.05em;
+    color: var(--color2);
 }
 
 #title {
-    transition-duration:1s;
+    transition-duration: 1s;
     font-family: serif monospace;
     font-weight: bolder;
     font-size: 4em;
     letter-spacing: -0.09em;
     color: var(--back1);
+    text-shadow: 3px 3px 3px var(--color1);
 }
 
 #title:hover {
-    transition-duration:1s;
+    transition-duration: 1s;
     letter-spacing: 0em;
+    text-shadow: 1px 1px 4px var(--color2);
 }
 
-a.activeMenuSection{
+a.activeMenuSection {
     color: var(--color2);
     font-size: 1.4em;
     text-decoration: none;
     text-shadow: 0px 0px 3px var(--back2);
 }
 
-#scrolling{
-    background: linear-gradient(var(--color1), var(--color3));
+#scrolling {
+    background: linear-gradient(var(--back1), var(--color1),var(--back1))
+}
+
+#lema {
+    color: var(--back2);
+    text-shadow: 1px 1px 3px var(--color1);
+}
+
+#lema:hover {
+    text-shadow: 1px 1px 2px var(--back2);
 }

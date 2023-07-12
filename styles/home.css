@@ -1,15 +1,64 @@
-@media all and (orientation:portrait) {
+@media all and (orientation:portrait) {}
 
-}
 @media all and (orientation:landscape) {
-  #scrolling{
-      height: 200vh;
-      width: 50vw;
-      margin: auto;
-  }
+    #scrolling {
+        display: block;
+        height: 200vh;
+        width: 50vw;
+        margin: auto;
+        padding-top: 100px;
+    }
 }
 
 
-body {
-   
+body {}
+
+.bimgs {
+    transform: translate(-50%, 0px);
+    width: 60%;
+    margin-top: 10%;
+    margin-left: 50%;
+    transition: 1s;
+}
+
+.bimgs:hover {
+    width: 80%;
+    transition: 1s;
+}
+
+.mimgs {
+    width: 40%;
+    transition: 1s;
+
+}
+
+#divPI {
+    transform: translate(-50%, 0);
+    margin-left: 50%;
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    transition: 1s;
+}
+
+#divPI:hover {
+    width: 90%;
+    transition: 1s;
+}
+
+
+
+#lema {
+    transform: translate(-50%, 0);
+    margin-left: 50%;
+    font-size: 3em;
+    text-align: center;
+    font-family: sans-serif;
+    transition: 1s;
+
+}
+
+#lema:hover {
+    transition: 1s;
+
 }
