@@ -16,7 +16,7 @@ html ::-webkit-scrollbar {
 
 html ::-webkit-scrollbar-thumb:hover {
     border-radius: 50px;
-    background: var(--back2);
+    background: var(--color2);
     transition: 0.5s;
 }
 
@@ -44,24 +44,25 @@ html {
 
 body {
     min-height: 100vh;
-    background: linear-gradient(var(--back2), var(--color3));
+    background: var(--back2);
     background-attachment: fixed;
 }
 
 header.menu {
+
     position: fixed;
-    top: 0;
+    top: 10vh;
     left: 0;
     width: 100%;
-    padding: 30px 100px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    
 }
 
 header ul {
     display: flex;
-
+    width: 25vw;
+    transform: translate(10%,0);
 }
 
 header ul li {
@@ -84,13 +85,15 @@ a.menuSection:hover {
 }
 
 #title {
+    transform: translate(25%,0);
     transition-duration: 1s;
     font-family: serif monospace;
     font-weight: bolder;
-    font-size: 4em;
+    font-size: 6vh;
     letter-spacing: -0.09em;
     color: var(--back1);
     text-shadow: 3px 3px 3px var(--color1);
+    width: 25vw;
 }
 
 #title:hover {
@@ -107,14 +110,19 @@ a.activeMenuSection {
 }
 
 #scrolling {
-    background: linear-gradient(var(--back1), var(--color1),var(--back1))
+    background: var(--back1)
 }
 
 #lema {
     color: var(--back2);
-    text-shadow: 1px 1px 3px var(--color1);
+    text-shadow: 1px 1px 3px var(--back2);
 }
 
-#lema:hover {
-    text-shadow: 1px 1px 2px var(--back2);
+#section1:hover>#lema{
+    text-shadow: 1px 1px 2px var(--color1);
 }
+
+
+#scrolling {
+    scroll-snap-type: y mandatory;
+  }

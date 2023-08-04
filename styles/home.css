@@ -3,7 +3,6 @@
 @media all and (orientation:landscape) {
     #scrolling {
         display: block;
-        height: 200vh;
         width: 50vw;
         margin: auto;
         padding-top: 100px;
@@ -11,25 +10,21 @@
 }
 
 
-body {}
+#section2{
+    padding-top: 50;
+}
 
 .bimgs {
-    transform: translate(-50%, 0px);
+    transform: translate(-50%, 25%);
     width: 60%;
-    margin-top: 10%;
     margin-left: 50%;
-    transition: 1s;
+    transition: 2s;
 }
 
 .bimgs:hover {
+    transform: translate(-50%, 10%);
     width: 80%;
-    transition: 1s;
-}
-
-.mimgs {
-    width: 40%;
-    transition: 1s;
-
+    transition: 2s;
 }
 
 #divPI {
@@ -37,28 +32,77 @@ body {}
     margin-left: 50%;
     display: flex;
     justify-content: space-between;
-    width: 60%;
-    transition: 1s;
+    width: 80%;
+    height: 70vh;
+}  
+
+
+.divsPI{
+    width: 50%;
 }
 
-#divPI:hover {
-    width: 90%;
-    transition: 1s;
+.divsPI:hover{
+    width: 70%;
+    transform: translate(0, -10%);
+}
+
+#i1:hover{
+    margin-left: 10%;
+    margin-right: -10%;
+    transition: 2s;
+
+}
+
+#i2:hover{
+    margin-right: 10%;
+    margin-left: -10%;   
+    transition: 2s;
+
+}
+
+#i1{
+    transition: 2s;
+}
+
+#i2{
+    transition: 2s;
+}
+
+.mimgs{
+    width: 100%;
 }
 
 
 
 #lema {
-    transform: translate(-50%, 0);
+
+    transform: translate(-50%, 40%);
     margin-left: 50%;
-    font-size: 3em;
+    font-size: 9vh;
     text-align: center;
     font-family: sans-serif;
     transition: 1s;
-
 }
 
 #lema:hover {
     transition: 1s;
 
 }
+
+
+
+html {
+    scroll-snap-type: y mandatory;
+  }
+  
+  #scrolling {
+    scroll-snap-type: y mandatory;
+  }
+  
+  .sSection {
+    scroll-snap-align: center;
+    height: 100vh;
+  }
+
+
+
