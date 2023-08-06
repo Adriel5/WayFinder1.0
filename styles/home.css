@@ -10,9 +10,6 @@
 }
 
 
-#section2{
-    padding-top: 50;
-}
 
 .bimgs {
     transform: translate(-50%, 25%);
@@ -34,54 +31,22 @@
     justify-content: space-between;
     width: 80%;
     height: 70vh;
-}  
-
-
-.divsPI{
-    width: 50%;
 }
 
-.divsPI:hover{
-    width: 70%;
-    transform: translate(0, -10%);
-}
-
-#i1:hover{
-    margin-left: 10%;
-    margin-right: -10%;
-    transition: 2s;
-
-}
-
-#i2:hover{
-    margin-right: 10%;
-    margin-left: -10%;   
-    transition: 2s;
-
-}
-
-#i1{
-    transition: 2s;
-}
-
-#i2{
-    transition: 2s;
-}
-
-.mimgs{
+.mimgs {
     width: 100%;
 }
 
 
 
 #lema {
-
-    transform: translate(-50%, 40%);
+    transform: translate(-50%, -50%);
     margin-left: 50%;
     font-size: 9vh;
-    text-align: center;
-    font-family: sans-serif;
+    text-align: left;
+    font-family: 'Andromeda';
     transition: 1s;
+    font-weight: 200;
 }
 
 #lema:hover {
@@ -90,19 +55,50 @@
 }
 
 
-
 html {
     scroll-snap-type: y mandatory;
-  }
-  
-  #scrolling {
+}
+
+#scrolling {
     scroll-snap-type: y mandatory;
-  }
-  
-  .sSection {
+}
+
+.sSection {
     scroll-snap-align: center;
     height: 100vh;
-  }
+}
 
+#section1,
+#section2 {
+    padding-top: 50vh;
+}
 
+#section5 {
+    padding-top: 50vh;
+}
 
+#Img2 {
+    height: 100vh;
+}
+
+#sectionOneFive>img {
+    width: 50vw;
+    transform: translate(0, -50%);
+}
+
+#sectionOneFive {
+    padding-top: 50vh;
+}
+
+#section3 {
+    padding-top: 10vh
+}
+
+#section6>p {
+    transform: translate(0, -50%);
+    text-align: center;
+}
+
+#section6 {
+    padding-top: 50vh;
+}
