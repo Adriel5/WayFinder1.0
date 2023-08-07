@@ -139,3 +139,7 @@ a.activeMenuSection {
 #buyLine>a{
     color: var(--color1);
 }
+
+#MA{
+    background-color: var(--back1);
+}
