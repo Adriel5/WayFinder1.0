@@ -143,3 +143,5 @@ a.activeMenuSection {
 #MA{
     background-color: var(--back1);
 }
+
+body { overflow-x: hidden; }

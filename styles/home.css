@@ -13,14 +13,14 @@
 
 .bimgs {
     transform: translate(-50%, 25%);
-    width: 60%;
+    width: 75%;
     margin-left: 50%;
     transition: 2s;
 }
 
 .bimgs:hover {
     transform: translate(-50%, 10%);
-    width: 80%;
+    width: 100%;
     transition: 2s;
 }
 
