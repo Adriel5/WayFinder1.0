@@ -126,3 +126,16 @@ a.activeMenuSection {
 #scrolling {
     scroll-snap-type: y mandatory;
   }
+
+  .description{
+    text-shadow: 2px 2px 1px var(--color1)
+  }
+
+  .descImg {
+    border:3px solid var(--back2)
+  }
+
+  
+#buyLine>a{
+    color: var(--color1);
+}
