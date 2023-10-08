@@ -6,7 +6,9 @@
     --back2: rgb(0, 0, 0);
 }
 
-@media all and (orientation:portrait) {}
+header{
+    z-index: 1000;
+}
 
 @media all and (orientation:landscape) {}
 
@@ -56,13 +58,13 @@ header.menu {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    
+
 }
 
 header ul {
     display: flex;
     width: 25vw;
-    transform: translate(10%,0);
+    transform: translate(10%, 0);
 }
 
 header ul li {
@@ -85,7 +87,7 @@ a.menuSection:hover {
 }
 
 #title {
-    transform: translate(25%,0);
+    transform: translate(25%, 0);
     transition-duration: 1s;
     font-family: serif monospace;
     font-weight: bolder;
@@ -118,30 +120,117 @@ a.activeMenuSection {
     text-shadow: 1px 1px 3px var(--color3);
 }
 
-#section1:hover>#lema{
+#section1:hover>#lema {
     text-shadow: 1px 1px 2px var(--color1);
 }
 
 
 #scrolling {
     scroll-snap-type: y mandatory;
-  }
+}
 
-  .description{
+.description {
     text-shadow: 2px 2px 1px var(--color1)
-  }
+}
 
-  .descImg {
-    border:3px solid var(--back2)
-  }
+.descImg {
+    border: 3px solid var(--back2)
+}
 
-  
-#buyLine>a{
+
+#buyLine>a {
     color: var(--color1);
 }
 
-#MA{
+#MA {
     background-color: var(--back1);
 }
 
-body { overflow-x: hidden; }
+body {
+    overflow-x: hidden;
+}
+
+@media all and (orientation:portrait) {
+    html ::-webkit-scrollbar {
+        width: 0;
+    }
+
+    #title{
+        width: 40vw;
+    }
+
+    #menuL {
+        display: none;
+    }
+
+    #menuP {
+        background-color: var(--back2);
+        position: fixed;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding:3vh 10vw 3vh 10vw
+    }
+
+    #title {
+        font-size: 7vw;
+        transform: translate(0%, 0);
+
+    }
+
+    #menuButton {
+        font-weight: bolder;
+        font-size: 7vw;
+        color: var(--back1);
+        text-shadow: 3px 3px 3px var(--color1);
+        background-color: var(--back2);
+        border: none;
+        transform: translate(0%, 0);
+        #menuButton.rotate-90 {
+    transform: rotate(90deg);
+}
+
+#menuButton.rotate-90 {
+    transform: rotate(90deg);
+}
+
+    }
+
+    #wow{
+        display: flex;
+        width: 80vw;
+        justify-content: space-between;
+    }
+
+    #men{
+        margin-top: 3vh;
+        overflow: hidden;
+        margin-left: -8vw;
+        background-color: var(--back2);
+        width: 80vw;
+        justify-content: space-around;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-in-out; /* Adiciona uma transição suave */
+
+        
+    }
+    #men>li{
+        justify-content: space-around;
+    }
+    a.menuSection{
+        font-size: 5vw;
+    }
+    a.activeMenuSection{
+        font-size: 5vw;
+    }
+    #menuButton:hover~#men{
+        height: 0px;
+    }
+}
+

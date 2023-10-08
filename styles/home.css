@@ -1,4 +1,3 @@
-@media all and (orientation:portrait) {}
 
 @media all and (orientation:landscape) {
     #scrolling {
@@ -144,4 +143,145 @@ html {
 #buyLine>a{
     text-decoration: none;
 
+}
+
+
+
+
+
+
+
+
+@media all and (orientation:portrait) {
+
+
+.bimgs {
+    transform: translate(-50%, 50%);
+    width: 100vw;
+    margin-left: 50%;
+    transition: 2s;
+}
+
+.bimgs:hover {
+    transform: translate(-50%, 10%);
+    width: 120vw;
+    transition: 2s;
+    margin-right: -10vw;
+}
+
+#divPI {
+    transform: translate(-50%, 0);
+    margin-left: 50%;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 70vh;
+}
+
+.mimgs {
+    width: 100%;
+}
+
+
+
+#lema {
+    margin-left: 45vw;
+    font-size: 10vw;
+    text-align: left;
+    font-family: 'Arial';
+    transition: 1s;
+    font-weight: 200;
+    vertical-align: middle;
+}
+
+html {
+    scroll-snap-type: y mandatory;
+}
+
+#scrolling {
+    scroll-snap-type: y mandatory;
+}
+
+.sSection {
+    scroll-snap-align: center;
+    height: 100vh;
+}
+
+#section1,
+#section2 {
+    padding-top: 50vh;
+}
+
+#section5 {
+    padding-top: 50vh;
+}
+
+#Img2 {
+    height: 100vh;
+}
+
+#sectionOneFive>img {
+    width: 100vw;
+    transform: translate(0, -50%);
+}
+
+#sectionOneFive {
+    padding-top: 50vh;
+}
+
+#section3 {
+    padding-top: 10vh
+}
+
+.description {
+    transform: translate(0, -50%);
+    text-align: center;
+    font-size: 8vw;
+    transition: 1s;
+    font-weight: 200;
+}
+
+#section6 {
+    padding-top: 50vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+
+}
+
+#section7, #section8, #section9, #section10{
+    padding-top: 50vh;
+}
+
+.divDesc {
+    display: flex;
+    padding-left: 10%;
+    padding-right: 10%;
+    justify-content: space-between;
+    transform: translate(0,-50%);
+    align-items: center;
+}
+
+.descImg {
+    width: 30vw;
+    border-radius: 5vh;
+}
+
+.desc {
+    width: auto;
+    text-align: center;
+    font-size: 6vw;
+    font-weight: 200;
+    vertical-align: middle;
+}
+
+#buyLine{
+    font-size: 10vw;
+    text-align: center;
+    transform: translate(0, -50%);
+}
+
+#buyLine>a{
+    text-decoration: none;
+
+}
 }
