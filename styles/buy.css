@@ -16,6 +16,6 @@ main{
 
 @media all and (orientation:portrait){
     #txt{
-        margin-top: 7vh;
+        font-size: 5vw;
     }
 }
