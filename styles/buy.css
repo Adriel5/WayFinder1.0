@@ -19,3 +19,9 @@ main{
         font-size: 5vw;
     }
 }
+
+@media all and (orientation:landscape){
+    #menuP{
+        display: none;
+    }
+}

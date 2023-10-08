@@ -12,6 +12,7 @@ header{
 
 @media all and (orientation:landscape) {}
 
+
 html ::-webkit-scrollbar {
     width: 15px;
 }

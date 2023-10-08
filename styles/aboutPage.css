@@ -1,0 +1,6 @@
+@media all and (orientation:landscape){
+    #menuP{
+        display: none;
+    }
+    
+}
