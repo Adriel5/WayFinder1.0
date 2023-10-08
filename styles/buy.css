@@ -13,3 +13,9 @@ main{
 #txt{
     transform: translate(0, -50%);
 }
+
+@media all and (orientation:portrait){
+    #txt{
+        margin-top: 7vh;
+    }
+}

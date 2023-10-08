@@ -3,27 +3,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Way Finder</title>
     <link rel="stylesheet" href="../styles/preDef.css">
-    <link rel="stylesheet" href="../styles/aboutPage.css">
     <link rel="stylesheet" href="../styles/buy.css">
     <link rel="stylesheet" href="../Styles/menu.css">
     
 </head>
 
 <body>
-    <header class="menu">
+    <header class="menu" id="menuL">
         <h1 id="title">Way Finder</h1>
         <ul>
             <li><a href="../home.html" class="menuSection">Home</a></li>
-            <li><a href="Buy.html" class="menuSection">Comprar</a></li>
+            <li><a href="buy.html" class="menuSection">Comprar</a></li>
             <li><a href="suportPage.html" class="menuSection">Suporte</a></li>
             <li><a href="aboutPage.html" class="activeMenuSection">Sobre nós</a></li>
         </ul>
     </header>
+    <header id="menuP">
+        <div id="wow"><h1 id="title">Way Finder</h1>
+        <button id="menuButton">≡</button>
+    </div>
+    <ul id="men">
+        <li><a href="../home.html" class="menuSection">Home</a></li>
+        <li><a href="Buy.html" class="menuSection">Comprar</a></li>
+        <li><a href="suportPage.html" class="menuSection">Suporte</a></li>
+        <li><a href="aboutPage.html" class="activeMenuSection">Sobre nós</a></li>
+    </ul>
+    </header>
     <main>
         <div id=txt>
-        <p>WayFinder foi criado para um trabalho escolar na Fundação Bradesco por Vitor Dutra, Marcelo de Almeida, Adriel Raupp, Manuela Martins e Luiz Líbano.</p>
+        <p>WayFinder foi criado para um trabalho escolar na Fundação Bradesco por Vitor Dutra, Marcelo de Almeida, Adriel Raupp, Manuela Martins e Luiz Líbano (Manuela Martins e Luiz Líbano saíram do projeto após o término do segundo bimestre de 2023).</p>
         </div>
+        <img src="../SubImgs/oporra.png">
     </main>
 </body>
+<style>
+    @media all and (orientation:portrait){
+        #txt{font-size: 5vw;}
+    }
+</style>
 <script src="../Script/preDef.js"></script>
 </html>
